@@ -28,7 +28,7 @@ public partial class ProductPage : ContentPage
         base.OnAppearing();
         var shopl = (ShopList)BindingContext;
 
-        listView.ItemsSource = await App.Database.GetListProductsAsync(shopl.ID);
+ listView.ItemsSource = await App.Database.GetListProductsAsync(shopl.ID);
     }
     async void OnAddButtonClicked(object sender, EventArgs e)
     {
