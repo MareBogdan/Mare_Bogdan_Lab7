@@ -15,5 +15,8 @@ namespace Mare_Bogdan_Lab7.Models
         [MaxLength(250), Unique]
         public string Description { get; set; }
         public DateTime Date { get; set; }
+
+        [ForeignKey(typeof(Shop))]
+        public int ShopID { get; set; }
     }
 }
